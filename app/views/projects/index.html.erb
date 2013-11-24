@@ -1,0 +1,7 @@
+<h1>All projects</h1>
+
+<ul>
+  <% @projects.each do | project | %>
+    <li class="project"><a href="#"><%= project.title %></a></li>
+  <% end %>
+</ul>
