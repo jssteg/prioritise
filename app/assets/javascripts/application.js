@@ -12,6 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui.custom.min
 //= require twitter/bootstrap
 //= require turbolinks
+//= require jquery.simulate.drag-sortable
 //= require_tree .
+
+
+$(function() {
+  $('.sortable').sortable({
+    handle: '.handle'
+  });
+
+});
