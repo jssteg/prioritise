@@ -11,4 +11,4 @@ Feature: View a list of all open Sifter tickets in a project
     Scenario: View DigitalNZ sifter tickets from projects page
       Given I am on the projects page
       When I go to the project page for DigitalNZ
-      Then I should get results
+      Then I should see a list of open tickets

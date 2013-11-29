@@ -1,7 +1,7 @@
 Given(/^there is a project with the following details:$/) do |table|
   # table is a Cucumber::Ast::Table
   table.hashes.each do |project|
-    Project.create(title: project[:name], sifter_id: project[:sifter_id])
+    Project.create(name: project[:name], sifter_id: project[:sifter_id])
   end
 end
 
@@ -13,6 +13,6 @@ When /^I go to the project page for (.+)$/ do |project_name|
   click_link project_name 
 end
 
-Then /^I should get results$/ do
-  pending # express the regexp above with the code you wish you had
+Then /^I should see a list of open tickets$/ do 
+  page.should have_selector("#ticket-list")
 end
