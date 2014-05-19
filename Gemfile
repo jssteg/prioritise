@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.4'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -20,6 +20,7 @@ end
 gem 'therubyracer', :platforms => :ruby
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
+gem 'figaro'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -46,8 +47,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
-gem 'sifter' 
 
 group :test do
   gem 'cucumber-rails', :require => false
