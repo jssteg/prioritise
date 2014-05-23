@@ -2,6 +2,9 @@
 
 <ul>
   <% @projects.each do | project | %>
-    <li class="project"><%= link_to project.name, project_path(project.id) %></a></li>
+    <li class="project"><%= link_to project.name, "projects/#{project.name}" %></a></li>
   <% end %>
 </ul>
+
+
+<%# link_to project.name, project.issues_url %>

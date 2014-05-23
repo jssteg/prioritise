@@ -19,7 +19,7 @@ end
 
 gem 'therubyracer', :platforms => :ruby
 gem 'less-rails'
-gem 'twitter-bootstrap-rails'
+gem 'twitter-bootstrap-rails', git: 'git@github.com:seyhunak/twitter-bootstrap-rails.git', ref: 'bootstrap3'
 gem 'figaro'
 
 # Use jquery as the JavaScript library
@@ -47,6 +47,8 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'sifter', path: "/Users/jesse/dev/rails_dev/sifter-ruby"
 
 group :test do
   gem 'cucumber-rails', :require => false
